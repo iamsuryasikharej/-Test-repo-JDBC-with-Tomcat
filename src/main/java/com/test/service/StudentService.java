@@ -26,7 +26,7 @@ public class StudentService {
 			e.printStackTrace();
 		}
 		try {
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Studentapp","root","Sury@171");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Studentapp","root","******");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("kk");
@@ -51,7 +51,7 @@ public class StudentService {
 	{
 		try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Studentapp","root","Sury@171");
+		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Studentapp","root","******");
 		PreparedStatement pst=con.prepareStatement("select * from studentinfo");
 		ResultSet rs=pst.executeQuery();
 		ar= new ArrayList<Student>();
